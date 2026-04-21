@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#header{
+    margin-left: 50px;
+    margin-right: 50px;
+    border: solid 1px black;
+    max-width: 100vw;
+    height: 80px;
+    margin-top: 30px;
+    
+}
+
+#galeria
+{
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    /* background-color: aqua; */
+    border: solid 1px black;
+    max-width: 100vw;
+    height: 700px;
+
+}
+
+#footer
+{
+    position: fixed;
+
+    bottom: 0;
+    width: 100vw;
+    height: 50px;
+    border: solid 1px black;
+    background-color: aqua;
+    
+}
