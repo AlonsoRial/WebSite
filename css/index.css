@@ -39,11 +39,49 @@
     margin-top: 30px;
     margin-left: 50px;
     margin-right: 50px;
-    /* background-color: aqua; */
+
     border: solid 1px black;
+    
     max-width: 100vw;
     height: 700px;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
 
+}
+
+.ventana{
+    background-color: brown;
+    border:dashed 1px black;
+    width: 700px;
+    border-radius: 40px;
+    
+
+}
+
+#v1{
+
+}
+
+#v2{
+    margin-left: 10px;
+}
+
+#v3{
+    margin-left: 10px;
+}
+
+
+#v1:hover{
+    width: 2500px;
+}
+
+#v2:hover{
+    width: 2500px;
+}
+
+#v3:hover{
+    width: 2500px;
 }
 
 #footer
