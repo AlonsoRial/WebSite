@@ -16,6 +16,8 @@
     
 }
 
+
+
 #imagen-header{
     border: solid 1px black;
     height: 70px;
@@ -23,6 +25,15 @@
     margin-left: 5px;
 
     
+}
+
+a{
+   
+}
+
+#imagen-header img{
+    max-width: max-content;
+    max-height: max-content;
 }
 
 #texto-header{
