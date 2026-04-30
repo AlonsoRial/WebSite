@@ -23,17 +23,15 @@
     height: 70px;
     width: 70px;
     margin-left: 5px;
-
     
 }
 
-a{
-   
-}
+
 
 #imagen-header img{
-    max-width: max-content;
-    max-height: max-content;
+    max-width: 100%;
+    height: 100%;
+  
 }
 
 #texto-header{
@@ -62,7 +60,10 @@ a{
 }
 
 .ventana{
-    background-color: brown;
+    /* background-color: brown; */
+    background-image: url(../pictures/homer-meme-1547553537.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
     border:dashed 1px black;
     width: 700px;
     border-radius: 40px;
@@ -70,17 +71,26 @@ a{
 
 }
 
-#v1{
+.ventana h2{
+    margin: 0;
 
+    position: relative;
+    left: 50px;
+    top: 600px;
+    font-size: 35px;
+}
+
+#v1{
+    transition: width 1.5s;
 }
 
 #v2{
     margin-left: 10px;
+        transition: width 1.5s;
 }
 
 #v3{
-    margin-left: 10px;
-}
+    margin-left: 10px;    transition: width 1.5s;}
 
 
 #v1:hover{
