@@ -63,18 +63,6 @@ a{
 
 }
 
-.ventana{
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    border:dashed 1px black;
-    width: 700px;
-    border-radius: 40px;
-  
-
-}
-
 .ventana h2{
     margin: 0;
 
@@ -84,28 +72,93 @@ a{
     font-size: 35px;
 }
 
-#v1{
-    transition: width 1.5s;
+.ventana{
+        margin: 0px 7px; /* Espacio entre cada ventana */
+    background-repeat: no-repeat; /* Me aseguro que el fondo no se repita */
+    background-size: cover; /* El fondo cubre toda la ventana */
+    
+    border:dashed 1px black; /* Borde discontinuo */
+    border-radius: 40px; /* Bordes redondeados */
+    width: 700px; /* Tamaño de cada ventana */
+
+    overflow: hidden; /* Recorta contenido que sobrepase los bordes  */
+    transition: width 1.5s; /* Transición suave para el cambio de tamaño */
+    position: relative; 
+
+}
+
+
+.ventana::before{
+    content: ""; /* Fondo de la ventana */
+    position: absolute; /* Posicionamiento absoluto */
+    inset: 0; /* Ocupa toda la ventana */
+    background-size: cover; /* El fondo cubre toda la ventana */
+    background-position: center; /* Centra el fondo */
+    z-index: 0; /* Capa del fondo */
+    opacity: 1; /* Opacidad inicial del fondo */
+  }
+
+.ventana::after{
+    content: ""; /* Fondo de la ventana al hacer hover */
+    position: absolute; /* Posicionamiento absoluto */
+    inset: 0; /* Ocupa toda la ventana */
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.6s ;
+  
+}
+
+.ventana > *{
+    position: relative;
+    z-index: 1;
+}
+
+.ventana:hover{
+    width: 2500px;
+}
+
+.ventana:hover::after{
+    opacity: 1;
+}
+
+
+
+#v1::before { background-image: url(../pictures/flip.avif); }
+#v1::after  { background-image: url(../pictures/homer-meme-1547553537.gif); }
+
+#v2::before { background-image: url(../pictures/flip.avif); }
+#v2::after  { background-image: url(../pictures/homer-meme-1547553537.gif); }
+
+#v3::before { background-image: url(../pictures/flip.avif); }
+#v3::after  { background-image: url(../pictures/homer-meme-1547553537.gif); }
+
+
+
+/* #v1{
+    transition: width 1.5s ;
+   
     background-image: url(../pictures/flip.avif);
-    transition: background-image 0.6s;
+
 }
 
 #v2{
     margin-left: 10px;
-    transition: width 1.5s;
+    transition: width 1.5s ;
     background-image: url(../pictures/flip.avif);
 }
 
 #v3{
     margin-left: 10px;    
-    transition: width 1.5s;
+    transition: width 1.5s ;
     background-image: url(../pictures/flip.avif);
-}
+} */
 
 
 
 
-#v1:hover{
+/* #v1:hover{
     width: 2500px;
     background-image: url(../pictures/homer-meme-1547553537.gif);
 }
@@ -118,7 +171,7 @@ a{
 #v3:hover{
     width: 2500px;
     background-image: url(../pictures/homer-meme-1547553537.gif);
-}
+} */
 
 #footer
 {
