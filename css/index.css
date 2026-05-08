@@ -200,4 +200,13 @@ a{
     width: auto;
     margin-left: 30px;
     display: block;
+    box-sizing: border-box;
+    border: 3px solid transparent; 
+
+    transition: opacity 0.3s ease, border-color 0.3s ease; 
+}
+
+#footer img:hover{
+    opacity:  1;  
+    border-color:  #403D39;
 }
