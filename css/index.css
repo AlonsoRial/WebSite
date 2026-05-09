@@ -9,9 +9,9 @@ body{
 }
 
 #header{
-    margin-left: 50px;
-    margin-right: 50px;
-    /* border: solid 1px black; */
+    margin-left: 70px;
+    margin-right: 70px;
+   
     max-width: 100vw;
     height: 80px;
     margin-top: 30px;
@@ -31,7 +31,7 @@ a{
     /* border: solid 1px black; */
     height: 70px;
     width: 70px;
-    margin-left: 5px;
+  
     
 }
 
