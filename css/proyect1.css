@@ -78,8 +78,8 @@ h3{
 .VentanaGrande{
     margin-top: 50px;
     /* border: solid 2px rgb(255, 15, 15); */
-    width: 1600px;
-    margin-left:calc(50vw - 800px);
+    width: 80vw;
+    margin-left:calc(50vw - 40vw);
     
 }
 
@@ -114,8 +114,8 @@ h3{
     align-items: center;
    
     display: inline-flex;
-    width: 1600px;
-    margin-left:calc(50vw - 800px);
+    width: 80vw;
+    margin-left:calc(50vw - 40vw);
 }
 
 
