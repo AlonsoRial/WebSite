@@ -76,15 +76,19 @@ h3{
 
 .VentanaGrande{
     margin-top: 50px;
+    /* border: solid 2px rgb(255, 15, 15); */
+    width: 1600px;
+    margin-left:calc(50vw - 800px);
+    
 }
 
 .ImagenVentanaGrande{
 
-    margin-top: 0px;
-    margin-left:calc(50vw - 800px);
     border:solid 15px #252422;
-    width: 1600px;
+  
+    width: auto;
     height: 762px;
+
     border-radius: 40px;
     overflow: hidden;
 }
@@ -96,7 +100,9 @@ h3{
 }
 
 .VentanaGrande p{
-    
+
+    margin: 40px 0px;
+    font-size: 20px;
     text-align: center;
 }
 
