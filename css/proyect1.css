@@ -5,8 +5,6 @@
 }
 
 
-
-
 body{
       background-color: #FFFCF2;
       display: flex;
@@ -15,27 +13,33 @@ body{
       overflow-x: hidden;
 }
 
+
+
 .header{
     /* border: #252422 1px solid; */
     top: 0;
     padding: 25px 0px;
-    z-index: 1;
-
-    display: flex;
-  
+    z-index: 1;  
     position: sticky;
     background-color: #CCC5B9;
+    height: 82px;;
 }
 
 
 
 .botonHome{
-
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 
 }
 
 .botonStore{
-
+    position: absolute;
+    right: 10vw;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .botonHome img{
