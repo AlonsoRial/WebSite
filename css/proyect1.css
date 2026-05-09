@@ -22,7 +22,9 @@ body{
     z-index: 1;  
     position: sticky;
     background-color: #CCC5B9;
-    height: 82px;;
+    height: 82px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }
 
 
