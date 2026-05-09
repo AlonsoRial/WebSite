@@ -27,14 +27,7 @@ body{
     background-color: #CCC5B9;
 }
 
-.botonHome img{
-    background-color: #252422;
-    width: 40px;
-    height: auto;
-    border-radius: 50px;
-    padding: 20px;
-        
-}
+
 
 .botonHome{
 
@@ -45,6 +38,14 @@ body{
 
 }
 
+.botonHome img{
+    background-color: #252422;
+    width: 40px;
+    height: auto;
+    border-radius: 50px;
+    padding: 20px;
+        
+}
 
 
 .botonStore img{
