@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     font-family: Akshar;
+  
 }
 
 
@@ -108,7 +109,8 @@ h3{
 .ImagenVentanaGrande img{
     width: 100%;
     height: 100%;
-
+    display: block;
+    object-fit: cover;
 }
 
 .VentanaGrande p{
@@ -122,6 +124,7 @@ h3{
 
 
 .VentanaLateral{
+   
     margin-top: 50px;
     align-items: center;
    
@@ -163,6 +166,8 @@ h3{
 .ImagenVentanaLateral img{
     width: 100%;
     height: 100%;
+    display: block;
+    object-fit: cover;
 }
 
 
@@ -212,6 +217,8 @@ h3{
 .ImagenVentanaDoble img{
     width: 100%;
     height: 100%;
+    display: block;
+    object-fit: cover;
 }
 
 .TextoDobleVentana{
@@ -257,8 +264,42 @@ h3{
 }
 
 
+
+@media only screen and (max-width: 400px) {
+    
+    /* .botonHome img{
+        width: 20px;
+    }
+
+    .botonStore img{
+        width: 60px;
+        height: 20px;
+    } */
+
+    h1{
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    h3{
+        font-size: 18px;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     
+    .botonHome img{
+        width: 30px;
+    }
+
+    .botonStore img{
+        width: 120px;
+        height: 30px;
+    }
+
 
     #footer p{
         font-size: 16px;
@@ -279,7 +320,25 @@ h3{
     .ImagenVentanaLateral, .TextoVentanaLateral, .VentanaIzq, .VentanaDer {
         width: 100%;
         height: auto;
-        margin: 0;
+        
+        
+    }
+
+    .ImagenVentanaLateral{
+        width: 83vw;
     }
     
+   .ImagenVentanaLateral, .TextoVentanaLateral{
+        margin-left: 0px;
+        margin-right: 0px;
+   }
+
+    .TextoVentanaLateral{
+         margin-top: 50px;
+    }
+
+    .VentanaDer{
+        margin-top: 50px;
+    }
+
 }
