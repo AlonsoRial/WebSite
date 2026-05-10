@@ -256,3 +256,19 @@ h3{
     border-color:  #403D39;
 }
 
+
+@media only screen and (max-width: 800px) {
+    
+    .VentanaGrande, .VentanaLateral, .DobleVentana {
+        width: 90vw;
+        margin-left: calc(50vw - 45vw);
+        flex-direction: column;
+    }
+
+    .ImagenVentanaLateral, .TextoVentanaLateral, .VentanaIzq, .VentanaDer {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    
+}
