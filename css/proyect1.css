@@ -307,11 +307,16 @@ h3{
         width: 90vw;
         margin-left: calc(50vw - 45vw);
         flex-direction: column;
- 
+        
     }
 
     .ImagenVentanaLateral, .TextoVentanaLateral, .VentanaIzq, .VentanaDer {
         width: 100%;
+        height: auto;
+    }
+
+
+    .ImagenVentanaDoble, .ImagenVentanaGrande, .ImagenVentanaLateral{
         height: auto;
     }
 
