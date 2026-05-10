@@ -139,10 +139,10 @@ a{
 
 
 
-#v1::before { background-image: url(../pictures/flip.avif); }
-#v1::after  { background-image: url(../pictures/homer-meme-1547553537.gif); }
+#v1::before { background-image: url(../pictures/Proyectos/OverZhousands/Inicio.png); }
+#v1::after  { background-image: url(../pictures/Proyectos/OverZhousands/Teaser_OverZhousands.gif); }
 
-#v2::before { background-image: url(../pictures/flip.avif); }
+#v2::before { background-image: url(../pictures/Proyectos/UMA/Inicio.png); }
 #v2::after  { background-image: url(../pictures/homer-meme-1547553537.gif); }
 
 #v3::before { background-image: url(../pictures/flip.avif); }
