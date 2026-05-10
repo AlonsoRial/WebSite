@@ -180,3 +180,25 @@ a{
     opacity:  1;  
     border-color:  #403D39;
 }
+
+@media only screen and (max-width: 1500px)
+{
+    .ventana h2{
+        font-size: 25px;
+        padding: 10px;;
+    }
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .ventana h2{
+        font-size: 15px;
+        padding: 10px 10px;
+    }
+}
+
+
+@media only screen and (max-width: 800px)
+{
+    
+}
