@@ -267,14 +267,7 @@ h3{
 
 @media only screen and (max-width: 400px) {
     
-    /* .botonHome img{
-        width: 20px;
-    }
-
-    .botonStore img{
-        width: 60px;
-        height: 20px;
-    } */
+   
 
     h1{
         font-size: 30px;
@@ -320,12 +313,15 @@ h3{
     .ImagenVentanaLateral, .TextoVentanaLateral, .VentanaIzq, .VentanaDer {
         width: 100%;
         height: auto;
-        
-        
     }
 
     .ImagenVentanaLateral{
-        width: 83vw;
+        box-sizing: border-box;
+    }
+
+    .ImagenVentanaLateral img{
+        width: 100%;
+        height: auto;
     }
     
    .ImagenVentanaLateral, .TextoVentanaLateral{
