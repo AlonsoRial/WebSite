@@ -139,14 +139,14 @@ a{
 
 
 
-#v1::before { background-image: url(../pictures/Proyectos/OverZhousands/Inicio.png); }
-#v1::after  { background-image: url(../pictures/Proyectos/OverZhousands/Teaser_OverZhousands.gif); }
+#v1::before { background-image: url(pictures/Proyectos/OverZhousands/Inicio.png); }
+#v1::after  { background-image: url(pictures/Proyectos/OverZhousands/Teaser_OverZhousands.gif); }
 
-#v2::before { background-image: url(../pictures/Proyectos/UMA/Inicio.png); }
-#v2::after  { background-image: url(../pictures/Proyectos/UMA/Carga.gif); }
+#v2::before { background-image: url(pictures/Proyectos/UMA/Inicio.png); }
+#v2::after  { background-image: url(pictures/Proyectos/UMA/Carga.gif); }
 
-#v3::before { background-image: url(../pictures/Proyectos/Pasatiempos/Caixa.jpeg); }
-#v3::after  { background-image: url(../pictures/Proyectos/Pasatiempos/Calvo.jpeg); }
+#v3::before { background-image: url(pictures/Proyectos/Pasatiempos/Caixa.jpeg); }
+#v3::after  { background-image: url(pictures/Proyectos/Pasatiempos/Calvo.jpeg); }
 
 
 
