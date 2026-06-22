@@ -1,4 +1,5 @@
 const ventanas = document.querySelectorAll(".ventana");
+const galeria = document.querySelector("#galeria");
 
 ventanas.forEach((ventana) => {
   ventana.addEventListener("click", function (event) {
@@ -17,3 +18,12 @@ ventanas.forEach((ventana) => {
     this.classList.add("activa");
   });
 });
+
+if (galeria) {
+  galeria.addEventListener("wheel", (event) => {
+    if (Math.abs(event.deltaY) > 0) {
+      event.preventDefault();
+      galeria.scrollLeft += event.deltaY;
+    }
+  }, { passive: false });
+}

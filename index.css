@@ -1,7 +1,13 @@
 *{
     margin: 0px;
     padding: 0px;
-        font-family: Akshar;
+    box-sizing: border-box;
+    font-family: Akshar;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
 }
 
 body{
@@ -15,7 +21,7 @@ body{
     margin-left: 70px;
     margin-right: 70px;
    
-    max-width: 100vw;
+    width: calc(100vw - 140px);
     height: 80px;
     margin-top: 30px;
     display: flex;
@@ -63,12 +69,17 @@ a{
 
     /* border: solid 1px black; */
     
-    max-width: 100vw;
-    height: 77vh;
+    width: calc(100vw - 100px);
+    flex: 1;
+    min-height: 0;
     display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
     box-sizing: border-box;
     position: relative;
-
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
 }
 
 .ventana h2{
@@ -94,11 +105,13 @@ a{
     border:solid 15px #252422; /* Borde ventanas */
     border-radius: 40px; /* Bordes redondeados */
     width: 700px; /* Tamaño de cada ventana */
+    min-width: 700px;
+    flex: 0 0 auto;
 
     overflow: hidden; /* Recorta contenido que sobrepase los bordes  */
     transition: width 1.5s, height 1.5s; /* Transición suave para el cambio de tamaño */
     position: relative; 
-
+    scroll-snap-align: center;
 }
 
 
