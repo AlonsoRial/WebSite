@@ -23,46 +23,51 @@ body{
     z-index: 1;  
     position: sticky;
     background-color: #CCC5B9;
-    height: 82px;
+    min-height: 82px;
     opacity: 1;
     transition: opacity 0.3s ease;
+
+    /* 3 columnas: hueco | Home (centro) | Store (derecha). Nunca se solapan */
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    column-gap: 12px;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 
-
-
 .botonHome{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
+    grid-column: 2;
+    display: block;
 }
 
 .botonStore{
-    position: absolute;
-    right: 10vw;
-    top: 50%;
-    transform: translateY(-50%);
+    grid-column: 3;
+    justify-self: end;
+    display: block;
 }
 
+.botonHome img,
+.botonStore img{
+    display: block;
+    box-sizing: content-box;
+    border-radius: 999px;
+}
+
+/* Home: el botón protagonista, más grande que Store */
 .botonHome img{
     background-color: #252422;
-    width: 40px;
+    width: clamp(44px, 8.5vw, 72px);
     height: auto;
-    border-radius: 50px;
-    padding: 20px;
-        
+    padding: clamp(16px, 2.6vw, 26px);
 }
-
 
 .botonStore img{
     background-color: #8ffb44;
-    width: 160px;
-    height: 40px;
-    padding: 20px;
-    border-radius: 50px;
-    
-
+    width: clamp(76px, 19vw, 200px);
+    height: clamp(28px, 4.6vw, 42px);
+    padding: clamp(12px, 2vw, 20px);
+    object-fit: contain;
 }
 
 
@@ -269,15 +274,11 @@ p{
 
 @media only screen and (max-width: 400px) {
     
-    .botonHome img{
-        width: 25px;
+    .header{
+        padding-left: 16px;
+        padding-right: 16px;
+        column-gap: 8px;
     }
-
-    .botonStore img{
-        width: 50px;
-        height: 25px;
-    }
-
 
     h1{
         font-size: 40px;
