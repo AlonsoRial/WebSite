@@ -77,9 +77,22 @@ if (galeria && track) {
 // Un solo clic/toque navega directamente a la página del proyecto.
 const hoverCapaz = window.matchMedia("(hover: hover) and (pointer: fine)");
 
+// Al salir de una ventana se desactiva. Se usa un pequeño retardo para que,
+// al cruzar el hueco entre dos ventanas, no se encoja y vuelva a crecer.
+let temporizadorSalida = null;
+
 ventanas.forEach((ventana) => {
   ventana.addEventListener("mouseenter", function () {
     if (!hoverCapaz.matches) return;
+    clearTimeout(temporizadorSalida);
     ventanas.forEach((v) => v.classList.toggle("activa", v === this));
+  });
+
+  ventana.addEventListener("mouseleave", function () {
+    if (!hoverCapaz.matches) return;
+    clearTimeout(temporizadorSalida);
+    temporizadorSalida = setTimeout(() => {
+      ventanas.forEach((v) => v.classList.remove("activa"));
+    }, 120);
   });
 });
